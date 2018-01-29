@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="header1">
+			<div class="zhongbu">
+				<div class="header-left">欢迎来到一淘网，阿里巴巴旗下生活省钱利器！</div>
+				<div class="header-right">
+					<div class="header-header">
+						<a href="#" class="hongse">亲,请登录</a><a href="#">免费注册</a>
+					</div>
+					<div class="header-header-r">
+						<ul>
+							<li>购物车</li>
+							<li>我得订单</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="content">
+        	<div class="content-left"></div>
+        	<div class="content-dakuang"> 
+	        	<div class="conten-zhongjian">
+	        		<input type="text" />
+	        		<span class="hongkuan"></span>
+	        	</div>
+	        	<ul>
+
+	        			<li><a>家居</a></li>
+	        			<li><a>家具</a></li>
+	        			<li><a>文具</a></li>
+	        			<li><a>数码</a></li>
+	        			<li><a>玩乐</a></li>
+	        			<li><a>厨卫</a></li>
+	        			<li><a>美食</a></li>
+	        			<li><a>男装</a></li>
+	        			<li><a>女装</a></li>
+	        			<li><a>童装</a></li>
+	        	</ul>
+        	</div>
+        	<div class="content-right"></div>
+        </div>
+		<div class="content1">
+			<div class="content1-center">
+				<div class="content1-left">
+					<section>
+						<div class="shouye">首页</div>
+						<div class="temai">品牌特卖</div>
+						<div class="qianggou">限时抢购</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		
+			<div class="content22"  id="navbar">
+				<div class="content22-left">
+					<span class="import">全部</span>
+					<span>即将上线</span>
+					<span>女装</span>
+					<span>男装</span>
+					<span>内衣</span>
+					<span>数码家电</span>
+					<span>食品</span>
+					<span>美妆护肤</span>
+					<span>母婴</span>
+					<span>鞋包配饰</span>
+					<span>家居家装</span>
+					<span>运动户外</span>
+				</div>
+			</div>
+			<div class="content2">
+			<div class="content2-down">
+				<div class="content2-down-left"></div>
+				<div class="content2-down-mid"></div>
+				<div class="content2-down-right">
+					<div class="content2-down-right-mid">
+						<div class="content2-down-right-mid-up"></div>
+						<span>立刻注册，立刻省钱</span>
+						<div class="right-mid-up">
+							<div class="lianga">
+								<a class="right-up-a1">用户登录</a>
+								<a class="right-up-a2">新用户注册</a>
+							</div>
+						</div>
+						<span class="line"></span>
+						<div class="saoma"></div>
+						<div class="erwima"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content3">
+			<div class="content3-mid"></div>
+		</div>
+		<div class="content4">
+			<div class="content4-mid">
+				<div class="content4-mid-up"></div>
+				<div class="content4-up">
+					<div class="content4-up-ph"></div>
+					<ul class="ul1"></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.js"></script>
+<script  src="js/ajax.js"></script>
+<script>
+	var oNavBar = document.getElementById("navbar")
+
+window.onscroll = function() {
+	
+	var iTop = document.body.scrollTop || document.documentElement.scrollTop;
+	
+	if (iTop > 50) {
+		oNavBar.style.position = "fixed"
+		oNavBar.style.top = 0
+		oNavBar.style.left = 0
+	} else {
+		oNavBar.style.position = "static"
+	}
+}
+</script>
